@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <style>
+    body {
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+    }
+    h1   {color: blue;}
+    p    {color: rgb(104, 104, 104); font-family: "Montserrat", sans-serif;}
+
+    #background {
+     background-color: white;
+    }
+
+
+    .image1 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .container {
+      margin-top: 10%;
+      position: relative;
+    }
+
+    .container:hover .overlay {
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      /* height: 81%; */
+    }
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+      align-content: center;
+    }
+
+
+    .text {
+      white-space: nowrap; 
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      padding-top: 25%;
+      pointer-events:none;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+    }
+  
+    .column1 {
+      float: left;
+      width: 33.33%;
+      height: 100%; 
+      background-image: url(image2.jpg.jpg);
+      background-size: cover;
+    }
+
+    .column2 {
+      float: left;
+      width: 33.33%;
+      height: 100%;
+      background-image: url(image3.jpg.jpg);
+      background-size: cover;
+    }
+
+    .column3 {
+      float: left;
+      width: 33.33%;
+      height: 100%; 
+      background-image: url(image6.jpg.jpg);
+      background-size: cover;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      height: 1%;
+    }
+
+    .row {
+        height: 100%;
+    }
+
+
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .column {
+        width: 100%;
+        padding-top: 50%;
+      }
+        }
+        #divall {
+          margin: auto;
+          width: 60%;
+          text-align: center;
+        }
+        
+        #buttonall{
+          font-family: "Montserrat", sans-serif;
+        }
+        
+        
+  </style>
+</head>
+<body>
+  <div id="background"></div>
+
+<div id="divall">
+  
+
+  <div class= "saveUsername"></div>
+  <div class = "button"></div> 
+  <div id="form">
+    <p style=>Enter Your Name.</p>
+    <input type="text" id="username">
+    <button onclick="saveUsername();">Save</button>
+    <script>
+    function saveUsername() {
+      document.getElementById("demo").innerHTML = "Username saved.";
+    } 
+  </script>
+  </div>  
+
+  <p id="usernamedisplay"></p>
+
+  <h2>JavaScript in Head</h2>
+
+  <p id="demo">A Paragraph.</p>
+
+  <div id="button">
+
+  <button type="buttonall" onclick="myFunction1()">Location A</button>
+  <button type="buttonall" onclick="myFunction2()">Location B</button>
+  <button type="buttonall" onclick="myFunction3()">Location C</button>
+  <button type="buttonall" onclick="myFunction4()">Location D</button>
+
+</div>
+  <div class="container">
+    <img src="image1.jpg.jpg" alt="Avatar" class="image1">
+    <div class="overlay">
+    <div class="row">
+      <a href="index2.html">
+      <div class="column1" style="background-color:#aaa;"></div>
+    </a>
+      <a href="index3.html">
+      <div class="column2" style="background-color:#bbb;"></div>
+    </a>
+    <a href="index4.html">
+      <div class="column3" style="background-color:#ccc;"></div>
+    </a>
+    </div>
+
+    <div class="text">Start Exploring The World</div>
+
+</div>
+
+</div>
+
+</div> 
+
+</body>
+
+
+</html>
+
+
+
+
