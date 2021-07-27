@@ -191,6 +191,7 @@ html {
 </head>
 <body>
 
+
     <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
     <div class="w3-clear"></div>
 
@@ -209,6 +210,14 @@ html {
     function saveUsername() {
       document.getElementById("demo").innerHTML = "Username saved.";
     } 
+    function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
   </script>
   </div>  
 
