@@ -15,7 +15,7 @@ img {margin-bottom: -7px}
 
 <!-- Sidebar -->
 <nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+  <a href="javascript:void(0)" onclick="close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
   <div class="bar-block center">
@@ -31,7 +31,7 @@ img {margin-bottom: -7px}
 
 <!-- Header -->
 <div class="opacity">
-<span class="button xxlarge white right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<span class="button xxlarge white right" onclick="open()"><i class="fa fa-bars"></i></span> 
 <div class="clear"></div>
 <header class="center margin-bottom">
   <h1><b>Country.</b></h1>
@@ -85,12 +85,12 @@ function myFunction() {
 }
 
 // Open and close sidebar
-function w3_open() {
+function open() {
   document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("mySidebar").style.display = "block";
 }
 
-function w3_close() {
+function close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
