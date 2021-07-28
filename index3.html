@@ -9,40 +9,40 @@
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
+.row-padding img {margin-bottom: 12px}
 </style>
 <body>
 
 <!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+<nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
-  <div class="w3-bar-block w3-center">
-    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
-    <a href="index2.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Urban</a>
-    <a href="index3.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Country</a>
-    <a href="index4.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Tropical</a>
+  <div class="bar-block center">
+    <a href="index.html" class="bar-item button text-grey hover-black">Home</a>
+    <a href="index2.html" class="bar-item button text-grey hover-black">Urban</a>
+    <a href="index3.html" class="bar-item button text-grey hover-black">Country</a>
+    <a href="index4.html" class="bar-item button text-grey hover-black">Tropical</a>
   </div>
 </nav>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+<div class="content" style="max-width:1500px">
 
 <!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-margin-bottom">
+<div class="opacity">
+<span class="button xxlarge white right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="clear"></div>
+<header class="center margin-bottom">
   <h1><b>Country.</b></h1>
   <p><b>Find where you would like to visit.</b></p>
-  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+  <p class="padding-16"><button class="button black" onclick="myFunction()">Toggle Grid Padding</button></p>
 </header>
 </div>
 
 <!-- Photo Grid -->
-<div class="w3-row" id="myGrid" style="margin-bottom:128px">
-  <div class="w3-third">
+<div class="row" id="myGrid" style="margin-bottom:128px">
+  <div class="third">
     <img src="Country/daniel-tseng--MsuVy24Hco-unsplash.jpg" style="width:100%">
     <img src="Country/elijah-m-henderson-DMED-sOt1Ak-unsplash.jpg" style="width:100%">
     <img src="Country/federico-respini-sYffw0LNr7s-unsplash.jpg" style="width:100%">
@@ -51,7 +51,7 @@ img {margin-bottom: -7px}
     <img src="Country/jake-blucker-SzNpyQMb8W4-unsplash.jpg" style="width:100%">
   </div>
 
-  <div class="w3-third">
+  <div class="third">
     <img src="Country/mike-holford-5Svf6WFsZEw-unsplash.jpg" style="width:100%">
     <img src="Country/mitch-boehn-h7l9K6eBMTM-unsplash.jpg" style="width:100%">
     <img src="Country/ricardo-gomez-angel-DH5Oglc5xyM-unsplash.jpg" style="width:100%">
@@ -60,7 +60,7 @@ img {margin-bottom: -7px}
     <img src="Country/vitolda-klein-wOs-AuwLlhM-unsplash.jpg" style="width:100%">
   </div>
 
-  <div class="w3-third">
+  <div class="third">
     <img src="Country/timothy-eberly-XemjjFd_4qE-unsplash.jpg" style="width:100%">
     <img src="Country/timothy-eberly-xjnaXGSzsKA-unsplash.jpg" style="width:100%">
     <img src="Country/werner-sevenster-JuP0ZG0UNi0-unsplash.jpg" style="width:100%">
@@ -77,10 +77,10 @@ img {margin-bottom: -7px}
 // Toggle grid padding
 function myFunction() {
   var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
+  if (x.className === "row") {
+    x.className = "row-padding";
   } else { 
-    x.className = x.className.replace("w3-row-padding", "w3-row");
+    x.className = x.className.replace("row-padding", "row");
   }
 }
 
