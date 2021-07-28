@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Explore National Jungles</title>
+<title>Explore Tropical/ali-abdul-rahman-9Itl-03hLao-unsplash.jpg Cities</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="index.css">
@@ -9,36 +9,40 @@
 <style>
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
-.row-padding img {margin-bottom: 12px}
+.my-row-padding img {margin-bottom: 12px}
 </style>
 <body>
 
-<nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+<!-- Sidebar -->
+<nav class="my-sidebar my-black my-animate-top my-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="my_close()" class="my-button my-black my-xxlarge my-padding my-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
-  <div class="bar-block center">
-    <a href="index.html" class="bar-item button text-grey hover-black">Home</a>
-    <a href="index2.html" class="bar-item button text-grey hover-black">Urban</a>
-    <a href="index3.html" class="bar-item button text-grey hover-black">Country</a>
-    <a href="index4.html" class="bar-item button text-grey hover-black">Tropical</a>
+  <div class="my-bar-block my-center">
+    <a href="index.html" class="my-bar-item my-button my-text-grey my-hover-black">Home</a>
+    <a href="index2.html" class="my-bar-item my-button my-text-grey my-hover-black">Tropical</a>
+    <a href="index3.html" class="my-bar-item my-button my-text-grey my-hover-black">Country</a>
+    <a href="index4.html" class="my-bar-item my-button my-text-grey my-hover-black">Tropical</a>
   </div>
 </nav>
 
-<div class="content" style="max-width:1500px">
+<!-- !PAGE CONTENT! -->
+<div class="my-content" style="max-width:1500px">
 
-<div class="opacity">
-<span class="button xxlarge white right" onclick="open()"><i class="fa fa-bars"></i></span> 
-<div class="clear"></div>
-<header class="center margin-bottom">
+<!-- Header -->
+<div class="my-opacity">
+<span class="my-button my-xxlarge my-white my-right" onclick="my_open()"><i class="fa fa-bars"></i></span> 
+<div class="my-clear"></div>
+<header class="my-center my-margin-bottom">
   <h1><b>Tropical.</b></h1>
   <p><b>Find where you would like to visit.</b></p>
-  <p class="padding-16"><button class="button black" onclick="myFunction()">Toggle Grid Padding</button></p>
+  <p class="my-padding-16"><button class="my-button my-black" onclick="myFunction()">Toggle Grid Padding</button></p>
 </header>
 </div>
 
-<div class="row" id="myGrid" style="margin-bottom:128px">
-  <div class="third">
+<!-- Photo Grid -->
+<div class="my-row" id="myGrid" style="margin-bottom:128px">
+  <div class="my-third">
     <img src="Tropical/ali-abdul-rahman-9Itl-03hLao-unsplash.jpg" style="width:100%">
     <img src="Tropical/annie-spratt-wMqPJs2x0-A-unsplash.jpg" style="width:100%">
     <img src="Tropical/chor-tsang-07mSKrzKiRw-unsplash.jpg" style="width:100%">
@@ -47,7 +51,7 @@ img {margin-bottom: -7px}
     <img src="Tropical/chuttersnap-9G1kXjqOq4U-unsplash.jpg" style="width:100%">
   </div>
 
-  <div class="third">
+  <div class="my-third">
     <img src="Tropical/corey-agopian-5y4ljzRrDFA-unsplash.jpg" style="width:100%">
     <img src="Tropical/denys-nevozhai-guNIjIuUcgY-unsplash.jpg" style="width:100%">
     <img src="Tropical/hussan-amir-h0DK5BIGBEg-unsplash.jpg" style="width:100%">
@@ -56,8 +60,7 @@ img {margin-bottom: -7px}
     <img src="Tropical/redcharlie-aexdWGJu7Gs-unsplash.jpg" style="width:100%">
   </div>
 
-  <div class="third">
-    <img src="Tropical/redcharlie-aexdWGJu7Gs-unsplash.jpg" style="width:100%">
+  <div class="my-third">
     <img src="Tropical/roberto-nickson-5ui0tfMC5ts-unsplash.jpg" style="width:100%">
     <img src="Tropical/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg" style="width:100%">
     <img src="Tropical/shreyas-sane-G9QPsPvw63g-unsplash.jpg" style="width:100%">
@@ -65,29 +68,42 @@ img {margin-bottom: -7px}
   </div>
 </div>
 
+<!-- End Page Content -->
 </div>
-
-
  
 <script>
+// Toggle grid padding
 function myFunction() {
   var x = document.getElementById("myGrid");
-  if (x.className === "row") {
-    x.className = "row-padding";
+  if (x.className === "my-row") {
+    x.className = "my-row-padding";
   } else { 
-    x.className = x.className.replace("row-padding", "row");
+    x.className = x.className.replace("my-row-padding", "my-row");
   }
 }
 
-function open() {
+// Open and close sidebar
+function my_open() {
   document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("mySidebar").style.display = "block";
 }
 
-function close() {
+function my_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
 
 </body>
 </html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

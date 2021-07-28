@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,19 +7,17 @@
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <!-- Sidebar -->
-<nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+<nav class="my-sidebar my-black my-animate-top my-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="my-button my-black my-xxlarge my-padding my-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
-  <div class="bar-block center">
-    <a href="index.html" class="bar-item button text-grey hover-black">Home</a>
-    <a href="index2.html" class="bar-item button text-grey hover-black">Urban</a>
-    <a href="index3.html" class="bar-item button text-grey hover-black">Country</a>
-    <a href="index4.html" class="bar-item button text-grey hover-black">Tropical</a>
+  <div class="my-bar-block my-center">
+    <a href="index.html" class="my-bar-item my-button my-text-grey my-hover-black">Home</a>
+    <a href="index2.html" class="my-bar-item my-button my-text-grey my-hover-black">Urban</a>
+    <a href="index3.html" class="my-bar-item my-button my-text-grey my-hover-black">Country</a>
+    <a href="index4.html" class="my-bar-item my-button my-text-grey my-hover-black">Tropical</a>
   </div>
-</nav>
 </nav>
   <script src="script.js"></script>
   <style>
@@ -148,39 +147,26 @@
         #buttonall{
           font-family: "Montserrat", sans-serif;
         }
-        .hover-white:hover, .white {
+        .my-hover-white:hover, .my-white {
     color: #000!important;
     background-color: #fff!important;
 }
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.my-right {
+    float: right!important;
 }
-*, :after, :before {
-    box-sizing: inherit;
-}
-user agent stylesheet
-i {
-    font-style: italic;
-}
-.hover-white:hover, .white {
-    color: #000!important;
-    background-color: #fff!important;
-}
-.xxlarge {
+.my-xxlarge {
     font-size: 36px!important;
 }
-.button {
+.my-button {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+*, :after, :before {
+    box-sizing: inherit;
 }
 body, h1 {
     font-family: "Montserrat", sans-serif;
@@ -194,27 +180,17 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-    content: "\f0c9";
+*, :after, :before {
+    box-sizing: inherit;
 }
 *, :after, :before {
     box-sizing: inherit;
 }
-
-*, :after, :before {
-    box-sizing: inherit;
-}
-
         
         
   </style>
 </head>
 <body>
-
-
-    <span class="button xxlarge white right" onclick="open()"><i class="fa fa-bars"></i></span> 
-    <div class="clear"></div>
-
   <div id="background"></div>
 
 <div id="divall">
@@ -230,15 +206,6 @@ html {
     function saveUsername() {
       document.getElementById("demo").innerHTML = "Username saved.";
     } 
-    function open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
   </script>
   </div>  
 
@@ -283,7 +250,5 @@ function close() {
 
 
 </html>
-
-
 
 
