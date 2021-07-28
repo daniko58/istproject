@@ -12,6 +12,7 @@ body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
 .my-row-padding img {margin-bottom: 12px}
 </style>
+
 <body>
 
 <!-- Sidebar -->
@@ -44,7 +45,7 @@ img {margin-bottom: -7px}
 <!-- Photo Grid -->
 <div class="my-row" id="myGrid" style="margin-bottom:128px">
   <div class="my-third">
-    <img src="Urban/craig-strahorn-uqqwA0mHZOA-unsplash.jpg" style="width:100%">
+    <img class="size_of_img" src="Urban/craig-strahorn-uqqwA0mHZOA-unsplash.jpg" data-location="Melbourne, Sydney" style="width: 100%;" alt="Image 1" />  
     <img src="Urban/andrew-amistad-RT0xyvwNB08-unsplash.jpg" style="width:100%">
     <img src="Urban/bmx22c-uVyBdRcrz94-unsplash.jpg" style="width:100%">
     <img src="Urban/matteo-catanese-PI8Hk-3ZcCU-unsplash.jpg" style="width:100%">
@@ -73,7 +74,8 @@ img {margin-bottom: -7px}
 
 <!-- End Page Content -->
 </div>
- 
+</body>
+
 <script>
 // Toggle grid padding
 function myFunction() {
@@ -82,7 +84,8 @@ function myFunction() {
     x.className = "my-row-padding";
   } else { 
     x.className = x.className.replace("my-row-padding", "my-row");
-  }
+  }   
+  document.getElementById('imgtooltip').style.left = '-1000px';
 }
 
 // Open and close sidebar
@@ -94,19 +97,13 @@ function my_open() {
 function my_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
-</script>
 
+
+
+</script>
+  
+  <div id="imgtooltip" class="imgtooltip"><div class="imgtooltiptext"><span id="locationText">grewon.pdf</span></div></div>
+<script src="script.js"></script>
 </body>
 </html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+

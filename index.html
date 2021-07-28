@@ -97,6 +97,8 @@
       height: 100%; 
       background-image: url(image2.jpg.jpg);
       background-size: cover;
+      color: white;
+      font-size: 56px;
     }
 
     .column2 {
@@ -105,6 +107,8 @@
       height: 100%;
       background-image: url(image3.jpg.jpg);
       background-size: cover;
+      color: white;
+      font-size: 56px;
     }
 
     .column3 {
@@ -113,6 +117,8 @@
       height: 100%; 
       background-image: url(image6.jpg.jpg);
       background-size: cover;
+      color: white;
+      font-size: 56px;
     }
 
     .row:after {
@@ -197,31 +203,17 @@ html {
 <div id="divall">
   
 
-  <div class= "saveUsername"></div>
-  <div class = "button"></div> 
-  <div id="form">
-    <p style=>Enter Your Name.</p>
-    <input type="text" id="username">
-    <button onclick="saveUsername();">Save</button>
-    <script>
-    function saveUsername() {
-      document.getElementById("demo").innerHTML = "Username saved.";
-    } 
-  </script>
-  </div>  
-
   <p id="usernamedisplay"></p>
 
-  <h2>JavaScript in Head</h2>
+  <h2>Photo-realistic</h2>
 
   <p id="demo">A Paragraph.</p>
 
   <div id="button">
 
-  <button type="buttonall" onclick="myFunction1()">Location A</button>
-  <button type="buttonall" onclick="myFunction2()">Location B</button>
-  <button type="buttonall" onclick="myFunction3()">Location C</button>
-  <button type="buttonall" onclick="myFunction4()">Location D</button>
+  <button type="buttonall" onclick="myFunction1()">Urban</button>
+  <button type="buttonall" onclick="myFunction2()">Country</button>
+  <button type="buttonall" onclick="myFunction3()">Tropical</button>
 
 </div>
   <div class="container">
@@ -229,13 +221,13 @@ html {
     <div class="overlay">
     <div class="row">
       <a href="index2.html">
-      <div class="column1" style="background-color:#aaa;"></div>
+      <div class="column1" style="background-color:#aaa;">Urban</div>
     </a>
       <a href="index3.html">
-      <div class="column2" style="background-color:#bbb;"></div>
+      <div class="column2" style="background-color:#bbb;">Country</div>
     </a>
     <a href="index4.html">
-      <div class="column3" style="background-color:#ccc;"></div>
+      <div class="column3" style="background-color:#ccc;">Tropical</div>
     </a>
     </div>
 

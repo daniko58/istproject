@@ -22,19 +22,29 @@ if(localStorage.getItem("username") != null){
 } 
 
 function myFunction1() {
-    document.getElementById("demo").innerHTML = "Paragraph 1 changed.";
+  window.location.href = "https://daniko58.github.io/istproject/index2.html";
   }
 
     function myFunction2() {
-    document.getElementById("demo").innerHTML = "Paragraph 2 changed.";
+      window.location.href = "https://daniko58.github.io/istproject/index3.html";
     }
 
     function myFunction3() {
-    document.getElementById("demo").innerHTML = "Paragraph 3 changed.";
+      window.location.href = "https://daniko58.github.io/istproject/index4.html";
     }
 
-    function myFunction4() {
-    document.getElementById("demo").innerHTML = "Paragraph 4 changed.";
-    }
-
+    var images = document.querySelectorAll('#myGrid img');
+images.forEach((image) => {
+  image.addEventListener('mouseover', (event) => {
+    var imgcoords = event.target.getBoundingClientRect();
+    var tooltim = document.getElementById('imgtooltip');
+    tooltim.style.left = imgcoords.left+window.pageXOffset+'px';
+    tooltim.style.top = imgcoords.top+window.pageYOffset-1+'px';
+    tooltim.style.width = imgcoords.width+'px';
+    tooltim.style.height = imgcoords.height+'px';
+    console.log(imgcoords);
+    tooltim.querySelector('#locationText').innerText = event.target.dataset.location;
     
+  });
+
+});
