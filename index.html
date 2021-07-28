@@ -238,6 +238,16 @@ html {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
+function change(){
+ var image = document.getElementById('circle');
+ if(image_tracker=='orange'){
+ image.src='image1.jpg';
+ image_tracker='blue';
+ }
+ else{
+ image.src='mountains.jpg';
+ image_tracker='orange';
+ }
   </script>
   </div>  
 
@@ -256,7 +266,7 @@ function w3_close() {
 
 </div>
   <div class="container">
-    <img src="image1.jpg.jpg" alt="Avatar" class="image1">
+    <img src="image1.jpg.jpg" alt="Circle" id="circle" onclick="change();">
     <div class="overlay">
     <div class="row">
       <a href="index2.html">
