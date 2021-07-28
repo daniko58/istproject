@@ -13,12 +13,12 @@ img {margin-bottom: -7px}
 </style>
 <body>
 
-<nav class="sidebar -black -animate-top -xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+<nav class="sidebar -black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
   <div class="bar-block -center">
-    <a href="index.html" class="bar-item button -text-grey -hover-black">Home</a>
+    <a href="index.html" class="bar-item button text-grey hover-black">Home</a>
     <a href="index2.html" class="bar-item button text-grey hover-black">Urban</a>
     <a href="index3.html" class="bar-item button text-grey hover-black">Country</a>
     <a href="index4.html" class="bar-item button text-grey hover-black">Tropical</a>
@@ -75,7 +75,7 @@ function myFunction() {
   if (x.className === "row") {
     x.className = "row-padding";
   } else { 
-    x.className = x.className.replace("row-padding", "-row");
+    x.className = x.className.replace("row-padding", "row");
   }
 }
 
